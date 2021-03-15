@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  background: #674baf; }
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600; }
+
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #674baf;
+  text-decoration: none;
+  border-radius: 1rem; }
+
+.hero {
+  color: #fff;
+  display: flex; }
+  .hero__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600; }
