@@ -1,4 +1,75 @@
+header{
+    margin-bottom:2.2rem;
+    @media (min-width:$tablet){
+        margin-bottom:6.6rem;
+        margin-top:4rem;
+    }
+
+    .huddle-logo{
+        max-width: 7.5rem;
+
+        @media (min-width:$tablet){
+            max-width: 12.5rem;
+        }
+    }
+}
+
 .hero{
     color:$white;
-    display: flex;
+    text-align: center;
+
+    @media (min-width:$tablet){
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:3.75rem;
+        max-width: 1280px;
+        margin:0 auto;
+    }
+
+    &__content{
+        @media (min-width:$tablet){
+            text-align: left;
+        }
+        p{
+            font-size:$font-md;
+        }
+    }
+
+    &__pic img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.social-list{
+
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        @media (min-width:$tablet){
+            justify-content: flex-end;
+        }
+
+    .social-link{
+        &:not(:last-child){
+            margin-right:1rem;
+        }
+
+        a{
+            padding:8px;
+            border-radius:50%;
+            display: flex;
+            border:1px solid $white;
+        }
+
+        span{
+            transition:all 150ms ease-in-out;
+
+            &:hover{
+                color:$magenta;
+                border-color: $magenta;
+            }
+        }
+
+    }
 }

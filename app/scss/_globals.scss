@@ -4,14 +4,51 @@
 
 body{
     margin:0;
-    padding:0;
+    padding:40px;
     font-size:100%;
     font-family: $body-font;
     min-height: 100vh;
-    background:$primary-violet;
+    background-color:$primary-violet;
+    background-image:url(../../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:top;
+    line-height: 1.8;
+
+    @media (min-width:$tablet){
+        background-image:url(../../images/bg-desktop.svg);
+        background-size:cover;
+        padding:0;
+    }
 }
 
 h1{
     font-family: $heading-font;
     font-weight: $bold;
+    font-size:1.5rem;
+    line-height: 1.6;
+
+    @media (min-width:$tablet){
+        font-size:2.5rem;
+    }
+}
+
+.container{
+    max-width: 1280px;
+    margin:0 auto;
+}
+
+p{
+    margin:1.5625rem 0;
+}
+
+ul,ol{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.fab{
+    color:$white;
+    font-size:20px;
 }

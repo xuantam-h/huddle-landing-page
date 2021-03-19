@@ -11,7 +11,16 @@ $body-font: 'Open Sans', sans-serif;
 
 // FONT-SIZES
 
+$font-sm: 1rem;
+$font-md: 1.125rem;
+$font-xlg: 3rem;
+
 // FONT-WEIGHT
 
 $light:400;
 $bold:600;
+
+// BREAKPOINTS
+
+$tablet:768px;
+$desktop: 1024px;
